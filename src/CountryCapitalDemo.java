@@ -2,12 +2,21 @@ import java.util.HashMap;
 
 public class CountryCapitalDemo {
     static void main(String[] args) {
-        HashMap<String,Integer> CountryCapitalDemo=new HashMap<>();
-        ProductPriceDemo.put("Apple",12);
-        ProductPriceDemo.put("Orange",55);
-        ProductPriceDemo.put("Ipad",100);
-        ProductPriceDemo.put("Phone",300);
-        ProductPriceDemo.put("Bananaa",7);
-        System.out.println(ProductPriceDemo);
+        HashMap<String,String> CountryCapitalDemo=new HashMap<>();
+        CountryCapitalDemo.put("Oman","Muscat");
+        CountryCapitalDemo.put("UK","London");
+        CountryCapitalDemo.put("Qatar","Doha");
+        CountryCapitalDemo.put("Thiland","Bankook");
+        CountryCapitalDemo.put("china","Beijing");
+        System.out.println(CountryCapitalDemo);
+        System.out.println( CountryCapitalDemo.get("china"));
+        System.out.println( CountryCapitalDemo.containsKey("china"));
+        CountryCapitalDemo.put("UK","Manshester");
+        System.out.println(CountryCapitalDemo);
+        System.out.println(CountryCapitalDemo.size());
+
+
+
+
     }
 }
